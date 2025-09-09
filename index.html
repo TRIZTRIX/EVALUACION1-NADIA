@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nadia Espectáculos – Clase de prueba</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Nadia Espectáculos</h1>
+      <nav class="nav">
+        <a href="#modos">Modalidades</a>
+        <a href="#galeria">Galería</a>
+        <a href="#inscripcion" class="btn-cta">Inscríbete</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="container">
+      <h2>Bienvenidos al mundo del espectáculo</h2>
+      <p>Agenda tu <strong>clase de prueba gratis</strong> en danza, canto o teatro.</p>
+      <a href="#inscripcion" class="btn-primary">Quiero mi clase de prueba</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="modos" class="section container">
+      <h3>Modalidades disponibles</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Danza</h4>
+          <p>Trabajo de cuerpo, coordinación, musicalidad y expresión escénica.</p>
+        </article>
+        <article class="card">
+          <h4>Canto</h4>
+          <p>Técnica vocal, afinación, proyección y repertorio para escenario.</p>
+        </article>
+        <article class="card">
+          <h4>Teatro</h4>
+          <p>Impro, construcción de personaje y presencia escénica.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="galeria" class="section container">
+      <h3>Galería</h3>
+    
+      <div class="gallery">
+        <img src="assets/img/DSC08621.JPG" alt="Presentación Nadia Espectáculos 1">
+        <img src="assets/img/IMG_0559.JPG" alt="Presentación Nadia Espectáculos 2">
+        <img src="assets/img/IMG_0797.JPG" alt="Presentación Nadia Espectáculos 3">
+      </div>
+    </section>
+
+    <section id="inscripcion" class="section container">
+      <h3>Inscríbete a tu clase de prueba</h3>
+
+      <form id="form-inscripcion" novalidate>
+        <div class="form-grid">
+          <label>
+            Nombre y Apellido
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Camila Pérez" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" id="email" name="email" placeholder="Ej: cami@mail.com" required />
+          </label>
+
+          <label>
+            Teléfono (opcional)
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +56 9 1234 5678" />
+          </label>
+
+          <label>
+            Modalidad
+            <select id="modalidad" name="modalidad" required>
+              <option value="">Selecciona una modalidad</option>
+              <option value="danza">Danza</option>
+              <option value="canto">Canto</option>
+              <option value="teatro">Teatro</option>
+            </select>
+          </label>
+
+          <label class="full">
+            Comentarios (opcional)
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Cuéntanos si tienes algún objetivo o preferencia de horario"></textarea>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-primary">Enviar solicitud</button>
+      </form>
+
+      <p id="mensaje-exito" class="msg-exito" role="status" aria-live="polite" hidden>
+        <strong>¡Felicidades!</strong> Nos contactaremos en las próximas 24 horas para agendar tu clase de prueba.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="anio"></span> Emperatriz Freites y Hugo Castillo · Todos los derechos reservados</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
